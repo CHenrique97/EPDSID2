@@ -1,0 +1,111 @@
+<div class="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="sidebar-header">
+            
+            <h3>Ano desejado</h3>
+            </div> 
+        <div class="period">
+            <div class="mb-3">
+                <input type="email" [(ngModel)]="years" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="sidebar-header">
+            
+            <h3>Periodo desejado</h3>
+            </div> 
+        <div class="period">
+            <div class="mb-3">
+                <input type="email" [(ngModel)]="period" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="sidebar-header">
+
+        <h3>Variavel 1</h3>
+        </div> 
+        <div class="radio-buttons">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" (click)="var1='ELEVATION'" checked >
+                <label class="form-check-label" for="flexRadioDefault1">
+                    ELEVATION
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"  (click)="var1='TEMP'">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    TEMP
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" (click)="var1='DEWP'" >
+                <label class="form-check-label" for="flexRadioDefault1">
+                    DEWP
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" (click)="var1='SLP'" >
+                <label class="form-check-label" for="flexRadioDefault1">
+                    SLP
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" (click)="var1='VISIB'" >
+                <label class="form-check-label" for="flexRadioDefault1">
+                    VISIB
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" (click)="var1='WDSP'">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    WDSP
+                </label>
+              </div>
+
+        </div>     
+        <div class="sidebar-header">
+
+            <h3>Variavel 2</h3>
+            </div> 
+            <div class="radio-buttons">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultV2" id="flexRadioDefault2" checked (click)="var2='ELEVATION'">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        ELEVATION
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultV2" id="flexRadioDefault2" (click)="var2='TEMP'">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        TEMP
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultV2" id="flexRadioDefault2" (click)="var2='DEWP'">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        DEWP
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultV2" id="flexRadioDefault2" (click)="var2='SLP'">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        SLP
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultV2" id="flexRadioDefault2" (click)="var2='VISIB'">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        VISIB
+                    </label>
+                  </div>
+    
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultV2" id="flexRadioDefault2" (click)="var2='WDSP'">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        WDSP
+                    </label>
+                  </div>
+    
+            </div>   
+            <button type="button" class="btn btn-success" (click)="makeAndSend()">Enviar</button>
+    </div>
+
+        
+</div>

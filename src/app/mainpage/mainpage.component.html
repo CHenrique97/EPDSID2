@@ -1,0 +1,38 @@
+<div class="graph_cards">
+    <div class="row">
+        
+    <div class="card" style="width: 30rem;">
+        <img class="card-img-top" [src]="imageSource1" alt="Card image cap">
+ 
+      </div>
+      <div class="card" style="width: 30rem;">
+        <img class="card-img-top" [src]="imageSource2" alt="Card image cap">
+
+      </div>
+      <div class="card" style="width: 32rem;">
+        <img class="card-img-top" [src]="imageSource3" alt="Card image cap">
+
+      </div>
+    </div>
+</div>
+<div class="data_cards">
+    <div class="row">
+        <div class="card" style="width: 18rem;">
+
+            <div class="card-body">
+                <h5 class="card-title">Variavel 1</h5>
+              <p class="card-text">Média: {{defaultVal.var1_avg}}</p>
+              <p class="card-text">Desvio Padrão: {{defaultVal.var1_std}}</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+
+            <div class="card-body">
+                <h5 class="card-title">Variavel 2</h5>
+                <p class="card-text">Média: {{defaultVal.var2_avg}}</p>
+                <p class="card-text">Desvio Padrão: {{defaultVal.var2_std}}</p>
+            </div>
+          </div>
+      </div>   
+</div>
+<button type="button" class="btn btn-success" (click)="refresh()">Refresh</button>
